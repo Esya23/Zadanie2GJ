@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+  <header class="header">
+    <h2 class="title">Cradle & Style</h2>
+    <nav class="nav">
+        <a href="#block1" class="nav_item">Главная</a>
+        <a href="#block2" class="nav_item">Коляски</a>
+        <a href="#block3" class="nav_item">Цены</a>
+        <a href="#block4" class="nav_item">Акции</a>
+        <a href="#block5" class="nav_item">Контакты</a>
+    </nav>
+</header>
+
+    <main>
+        <section class="block1" id="block1">
+            <div class="left">
+                <img src="1.1.webp" alt="" class="photo1">
+            </div>
+            <div class="right">
+                <h2 class="caption">Добро пожаловать в наш магазин премиальных колясок!</h2>
+                <p class="text1">Стиль и удобство найдете у нас! </p>
+                <button class="btn">За покупками</button>
+            </div>
+        </section>
+    
+        <section class="block2" id="block2">
+    <div class="photos-container">
+        <div class="photo-item">
+            <img src="1.webp" class="photo" alt="Детская коляска">
+            <p class="photo-caption">Cybex Priam 4 Chrome Brown</p>
+        </div>
+        
+        <div class="photo-item">
+            <img src="2.webp" class="photo" alt="Детская коляска">
+            <p class="photo-caption">Cybex Priam 4 Rose Gold</p>
+        </div>
+        
+        <div class="photo-item">
+            <img src="3.webp" class="photo" alt="Детская коляска">
+            <p class="photo-caption">Bugaboo Fox 5 Beige</p>
+        </div>
+        
+        <div class="photo-item">
+            <img src="4.jpg" class="photo" alt="Детская коляска">
+            <p class="photo-caption">Bugaboo Fox 5 Rose</p>
+        </div>
+        
+        <div class="photo-item">
+            <img src="5.webp" class="photo" alt="Детская коляска">
+            <p class="photo-caption">Anex IQ</p>
+        </div>
+    </div>
+</section>
+    
+       <section class="block3" id="block3">
+    <table class="my-table">
+        <caption>Актуальные цены:</caption>
+        <thead>
+            <tr>
+                <th>Описание</th>
+                <th>Цена</th>
+                <th>Заказать</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cybex priam 4</td>
+                <td>159 990 р</td>
+                <td><input type="button" value="Заказать"></td>
+            </tr>
+            <tr>
+                <td>Bugaboo fox 5</td>
+                <td>139 990 р</td>
+                <td><input type="button" value="Заказать"></td>
+            </tr>
+            <tr>
+                <td>Anex iq premium</td>
+                <td>95 990 р</td>
+                <td><input type="button" value="Заказать"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+        <section class="block4" id="block4">
+    <div class="form-container">
+        <h3>ВСЕМ ПОДАРКИ</h3>
+        <p class="subtitle">3000 руб для покупки первой коляски!<br>
+        купон действует 14 дней - ⚠ Количество купонов ограничено</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="user-name">Ваше имя:</label>
+                <input type="text" id="user-name" name="name" placeholder="Имя*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-mail">Ваш почтовый адрес:</label>
+                <input type="email" id="user-mail" name="mail" placeholder="E-mail*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-phone">Ваш номер телефона:</label>
+                <input type="tel" id="user-phone" name="number" placeholder="Телефон*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-offers">Выберите бренд:</label>
+                <select name="strollers" id="user-offers">
+                    <option value="">Выберите коляску</option>
+                    <option value="Cb">Cybex</option>
+                    <option value="Bb">Bugaboo</option>
+                    <option value="An">Anex</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="user-message">Комментарии и пожелания:</label>
+                <textarea id="user-message" name="message" rows="3" placeholder="..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Подписываюсь на новостную рассылку</label>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Срочность:</label>
+                <div class="radio-options">
+                    <input type="radio" id="urgent-yes" name="urgently" value="yes">
+                    <label for="urgent-yes">Срочно</label>
+                    <input type="radio" id="urgent-no" name="urgently" value="no">
+                    <label for="urgent-no">Не срочно</label>
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Отправить сообщение" class="btn btn-primary">
+                <input type="reset" value="Очистить форму" class="btn btn-secondary">
+            </div>
+        </form>
+    </div>
+</section>
+
+            <section class="block5" id="block5">
+    <div class="contacts-container">
+        <div class="contacts-header">
+            <h1 class="contacts-title">Контакты</h1>
+            <p class="contacts-subtitle">Мы всегда рады помочь вам!</p>
+        </div>
+
+        <div class="contacts-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Красноказарменная 17</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h3>Электронная почта</h3>
+                        <p><a href="mailto:Cradle.Style@mail.ru">Cradle.Style@mail.ru</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-section">
+                <h2 class="location-title">Как проехать</h2>
+                <div class="map-container">
+                    <img src="7.webp" alt="Карта проезда до магазина Cradle Style" class="location-photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Cradle & Style. Все права защищены.</p>
+    </div>
+</footer>
+    
+
+
+
+    
+   
+  
+    
+</body>
+</html>
